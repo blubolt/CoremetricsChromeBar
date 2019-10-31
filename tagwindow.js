@@ -81,6 +81,9 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
       (request.targetUrl ? '<tr><td width="100px">Target HREF/URL</td><td>' + request.targetUrl + '</td></tr>' : '') +
       (request.clientId ? '<tr><td width="100px">Client ID</td><td>' + request.clientId + '</td></tr>' : '') +
       (request.category ? '<tr><td width="100px">Category ID</td><td>' + request.category + '</td></tr>' : '') +
+      (request.cm_vc ? '<tr><td width="100px">Virtual Category ID</td><td>' + request.cm_vc + '</td></tr>' : '') +
+      (request.searchTerm ? '<tr><td width="100px">Search Term</td><td>' + request.searchTerm + '</td></tr>' : '') +
+      (request.searchResults ? '<tr><td width="100px">Search Results</td><td>' + request.searchResults + '</td></tr>' : '') +
       (request.libraryVersion ? '<tr><td width="100px">Library Version</td><td>' + request.libraryVersion + '</td></tr>' : '') +
       (request.conversionId ? '<tr><td width="100px">Conversion Event ID</td><td>' + request.conversionId + '</td></tr>' : '') +
       (request.conversionAction ? '<tr><td width="100px">Conversion Action Type</td><td>' + request.conversionAction + '</td></tr>' : '') +

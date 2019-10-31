@@ -55,6 +55,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
             "tagType": queryString['tid'] || '',  
             "clientId": queryString['ci'] || '',          
             "category": queryString['cg'] || '',
+            "cm_vc": queryString['cm_vc'] || '',
             "pageId": queryString['pi'] || '',
             "actionType": queryString['at'] || '',
             "referralUrl": queryString['rf'] || '',
@@ -87,7 +88,9 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 			"zp": queryString['zp'] || '',
 			"cy": queryString['cy'] || '',
             "nl": queryString['nl'] || '',
-            "sd": queryString['sd'] || ''
+            "sd": queryString['sd'] || '',
+            "searchTerm": queryString['se'] || '',
+            "searchResults": queryString['sr'] || ''
 
           };
 
